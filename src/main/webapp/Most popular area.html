@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Most popular areas</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'Most popular areas',
+    height: 700,
+    width: 900,
+
+
+};
+
+var trace0 =
+{
+x: ["Downtown","Obour City","Sheikh Zayed","Sheraton","10th of Ramadan City","Giza","Alexandria","Mohandessin","Dokki","Heliopolis","6th of October","Nasr City","New Cairo","Maadi","Cairo"],
+y: [42.0, 74.0, 77.0, 103.0, 108.0, 126.0, 130.0, 140.0, 140.0, 247.0, 282.0, 424.0, 520.0, 524.0, 563.0],
+orientation: 'v',
+xaxis: 'x',
+yaxis: 'y',
+type: 'bar',
+name: '',
+};
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>

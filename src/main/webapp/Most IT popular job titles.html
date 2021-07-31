@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Most IT popular job titles</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'Most IT popular job titles',
+    height: 700,
+    width: 900,
+
+
+};
+
+var trace0 =
+{
+x: ["iOS Developer","Senior Android Developer","System Administrator","Technical Support Engineer","UI/UX Designer","Senior PHP Developer","Full Stack Developer","Senior Java Developer","IT Technical Support Specialist","Software Developer","Senior Full Stack Developer","IT Specialist","Front End Developer","Senior iOS Developer","IT Help Desk Specialist"],
+y: [4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 9.0],
+orientation: 'v',
+xaxis: 'x',
+yaxis: 'y',
+type: 'bar',
+name: '',
+};
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>
